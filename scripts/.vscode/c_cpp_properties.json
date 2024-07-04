@@ -1,0 +1,42 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/robot/dsv_planner/devel/include/**",
+        "/home/robot/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/robot/catkin_ws/src/a_star_pkg/include/**",
+        "/home/robot/dsv_planner/src/dsvplanner/dsvplanner/include/**",
+        "/home/robot/catkin_ws/src/exploration/include/**",
+        "/home/robot/catkin_ws/src/explore/include/**",
+        "/home/robot/dsv_planner/src/dsvplanner/graph_planner/include/**",
+        "/home/robot/dsv_planner/src/dsvplanner/graph_utils/include/**",
+        "/home/robot/dsv_planner/src/kdtree/include/**",
+        "/home/robot/dsv_planner/src/minkindr/minkindr/include/**",
+        "/home/robot/dsv_planner/src/minkindr_ros/minkindr_conversions/include/**",
+        "/home/robot/dsv_planner/src/dsvplanner/misc_utils/include/**",
+        "/home/robot/catkin_ws/src/move_base_nav/include/**",
+        "/home/robot/catkin_ws/src/nearest_frontier_planner/include/**",
+        "/home/robot/dsv_planner/src/volumetric_mapping/octomap_world/include/**",
+        "/home/robot/catkin_ws/src/pointcloud_to_laserscan/include/**",
+        "/home/robot/catkin_ws/src/robot_exploration/include/**",
+        "/home/robot/catkin_ws/src/rrt_exploration/include/**",
+        "/home/robot/catkin_ws/src/tdle/include/**",
+        "/home/robot/autonomous_exploration_development_environment/src/velodyne_simulator/velodyne_gazebo_plugins/include/**",
+        "/home/robot/dsv_planner/src/volumetric_mapping/volumetric_map_base/include/**",
+        "/home/robot/autonomous_exploration_development_environment/src/waypoint_rviz_plugin/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
