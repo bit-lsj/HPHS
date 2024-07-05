@@ -356,16 +356,16 @@ class Explorer:
         pair_lst = []
         if len(self.subregions) > 0:
             for i in range(len(self.subregions)):
-                center_idx = self.subregions[i]
+                subregion_idx = self.subregions[i]
                 # Distance between the robot and the center of the subregion
                 # Todo 1: The distance should be calculated by A* algorithm using the grid map
                 # Todo 2: Use the centroid of the frontiers within the subregion, instead of the center of the subregion
-                dist = distance([self.odom_x, self.odom_y], self.subregion_center[center_idx])
-                dist_index_pair = (dist, center_idx)
+                dist = distance([self.odom_x, self.odom_y], self.subregion_center[subregion_idx])
+                dist_index_pair = (dist, subregion_idx)
                 pair_lst.append(dist_index_pair)
             
             sorted_dist_index_pairs = sorted(pair_lst)
-            # Choose the top 5 subregions at most, 
+            # Choose the 5 nearest subregions at most, 
             # as the distant subregions contribute less to the overall revenue
             if len(self.subregions) > 5:
                 top_indices = [pair[1] for pair in sorted_dist_index_pairs[:5]]
@@ -373,7 +373,7 @@ class Explorer:
                 top_indices = [pair[1] for pair in sorted_dist_index_pairs]
 
             # List all the possible of the arrangement of subregions
-            # Todo3: Use heuristic algorithm to optimize the arrangement, intead of the brute force method
+            # Todo 3: Use heuristic algorithm to optimize the arrangement, instead of the brute force method
             permutations_lst = list(permutations(top_indices, len(top_indices)))
             best_rev = -inf
             for i in range(len(permutations_lst)):
@@ -813,7 +813,7 @@ class Explorer:
             position = Point()
             position.x = self.map_origin_x_resized + int(index % self.n_w) * subregion_width + subregion_width / 2
             position.y = self.map_origin_y_resized + int(index / self.n_w) * subregion_height + subregion_height / 2
-            position .z = 0.75
+            position.z = 0.75
             subregions.points.append(position)
         self.subregions_pub.publish(subregions)
 
