@@ -19,7 +19,7 @@ Shijun Long, Ying Li, Chenming Wu, Bin Xu, and Wei Fan
 ### Cite
 Please cite our paper if you used this project in your scientific research:
 
-## Experience
+## Experiment
 
 The method has been tested in both simulation and real-world environments, which can be seen in the [Experiment Video](https://youtu.be/MndZBmBNYSc).
 
