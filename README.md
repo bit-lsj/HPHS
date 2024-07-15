@@ -4,9 +4,19 @@
 
 HPHS is a system framework for rapid exploration of unknown environments. This framework is mainly composed of three modules: __Hybrid Frontier Point Sampling Module__, __Subregion Segmentation and Selection Module__ , __Frontier Selection Module__. These three modules are executed in sequence following a timeline, until the entire environment is modeled. This repository is the __Python implementation__ of our method.
 
+<p align="center">
+  <img src="figure/fig0.png" width = "400" height = "273"/>
+    <img src="figure/fig2.jpg" width = "400" height = "225"/>
+  <img src="figure/fig1.png" width = "400" height = "360"/>
+</p>
+
+## Related Paper: HPHS: Hierarchical Planning based on Hybrid Frontier Sampling for Unknown Environments Exploration (Accepted by IEEE IROS 2024)
+
+## Authors: Shijun Long, Ying Li, Chenming Wu, Bin Xu, and Wei Fan
+
 ## Experience
 
-The method has been tested in both simulation and real-world environments, which can be seen in the [experiment video](https://youtu.be/MndZBmBNYSc).
+The method has been tested in both simulation and real-world environments, which can be seen in the [Experiment Video](https://youtu.be/MndZBmBNYSc).
 
 ## Cite
 
@@ -55,6 +65,7 @@ git clone https://github.com/bit-lsj/HPHS.git
 ```bash
 cd autonomous_exploration_development_environment
 source ./devel/setup.sh
+source ~/${YOUR_WORKSPACE_PATH}/devel/setup.bash
 roslaunch HPHS exploration.launch
 ```
 

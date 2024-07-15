@@ -380,7 +380,7 @@ class Explorer:
                 option_arrangment = permutations_lst[i]
                 # Calculate the revenue of an optional arangement of subregions
                 total_rev = 0
-                total_dist = 0
+                cumulative_dist = 0
                 for j in range(len(option_arrangment)):
                     cur_idx = option_arrangment[j]
 
@@ -390,8 +390,8 @@ class Explorer:
                         last_idx = option_arrangment[j - 1]
                         dist = distance(self.subregion_center[last_idx], self.subregion_center[cur_idx])
                         
-                    total_dist += dist
-                    rev = np.exp(-self.lamda_1 * total_dist)
+                    cumulative_dist += dist
+                    rev = np.exp(-self.lamda_1 * cumulative_dist)
                     total_rev += rev
 
                 # Calculate DTW similarity between the last path sequence and the current path sequence
