@@ -10,17 +10,18 @@ HPHS is a system framework for rapid exploration of unknown environments. This f
   <img src="figure/fig1.png" width = "400" height = "360"/>
 </p>
 
-## Related Paper: HPHS: Hierarchical Planning based on Hybrid Frontier Sampling for Unknown Environments Exploration (Accepted by IEEE IROS 2024)
+### Related Paper
+HPHS: Hierarchical Planning based on Hybrid Frontier Sampling for Unknown Environments Exploration (Accepted by IEEE IROS 2024)
 
-## Authors: Shijun Long, Ying Li, Chenming Wu, Bin Xu, and Wei Fan
+### Authors
+Shijun Long, Ying Li, Chenming Wu, Bin Xu, and Wei Fan
+
+### Cite
+Please cite our paper if you used this project in your scientific research:
 
 ## Experience
 
 The method has been tested in both simulation and real-world environments, which can be seen in the [Experiment Video](https://youtu.be/MndZBmBNYSc).
-
-## Cite
-
-Please cite our paper if you used this project in your scientific research:
 
 ## How to use
 
