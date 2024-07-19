@@ -18,6 +18,14 @@ Shijun Long, Ying Li, Chenming Wu, Bin Xu, and Wei Fan
 
 ### 3. Cite
 Please cite our paper if you used this project in your scientific research:
+```
+@article{long2024hphs,
+  title={HPHS: Hierarchical Planning based on Hybrid Frontier Sampling for Unknown Environments Exploration},
+  author={Long, Shijun and Li, Ying and Wu, Chenming and Xu, Bin and Fan, Wei},
+  journal={arXiv preprint arXiv:2407.10660},
+  year={2024}
+}
+```
 
 ## Experiment
 
