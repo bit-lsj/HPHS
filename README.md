@@ -39,7 +39,8 @@ Note: This project has been tested in `Ubuntu 20.04 (ROS Noetic)`, and following
 
 ```bash
 sudo apt-get install ros-noetic-navigation \
-ros-noetic-octomap-*
+ros-noetic-octomap-* \
+ros-noetic-tf2-sensor-msgs
 ```
 
 ```bash
